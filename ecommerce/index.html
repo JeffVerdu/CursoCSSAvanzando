@@ -4,43 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecommerce - Home</title>
-    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
     <header>
-        <h1>Tienda Muebles</h1>
+        <h1 class="nombre-sitio">Tienda <span>Muebles</span></h1>
     </header>
 
-    <nav>
-        <a href="index.html">Inicio</a>
-        <a href="nosotros.html">Nosotros</a>
-        <a href="tienda.html">Tienda</a>
-        <a href="blog.html">Bolg</a>
-        <a href="contacto.html">Contacto</a>
-    </nav>
+    <div class="contenedor-principal">
+        <nav class="nav-principal contenedor">
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="tienda.html">Tienda</a>
+            <a href="blog.html">Blog</a>
+            <a href="galeria.html">Galería</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </div>
 
-    <section>
+    <div class="hero"></div>
+
+    <section class="contenedor categorias">
         <h2>Categorías de Productos</h2>
 
-        <div>
-            <img src="img/categoria1.jpg" alt="Imagen Categoria">
-            <a href="#">Oficina</a>
-        </div>
-        <div>
-            <img src="img/categoria2.jpg" alt="Imagen Categoria">
-            <a href="#">Hogar</a>
-        </div>
-        <div>
-            <img src="img/categoria3.jpg" alt="Imagen Categoria">
-            <a href="#">Cocina</a>
+        <div class="listado-categorias">
+            <div class="categoria">
+                <img src="img/categoria1.jpg" alt="Imagen Categoria">
+                <a href="#">Oficina</a>
+            </div>
+            <div class="categoria">
+                <img src="img/categoria2.jpg" alt="Imagen Categoria">
+                <a href="#">Hogar</a>
+            </div>
+            <div class="categoria">
+                <img src="img/categoria3.jpg" alt="Imagen Categoria">
+                <a href="#">Cocina</a>
+            </div>
         </div>
     </section>
 
-    <section>
-        <div>
-            <h2>Sobre Nosotros</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam tempora optio fugit consectetur dignissimos
-                 autem veritatis ex sed explicabo et, iure molestias voluptatum soluta non doloremque accusamus quasi vero at.</p>
+    <section class="sobre-nosotros" >
+        <div class="contenedor sobre-nosotros-flex">
+            <div class="texto-nosotros">
+                <h2>Sobre Nosotros</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam tempora optio fugit consectetur dignissimos
+                     autem veritatis ex sed explicabo et, iure molestias voluptatum soluta non doloremque accusamus quasi vero at.</p>
+            </div>
         </div>
     </section>
 
