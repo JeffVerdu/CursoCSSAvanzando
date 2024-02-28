@@ -60,7 +60,7 @@ h3 {
     margin: 0 auto;
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 1200px) {
     .contenedor {
         max-width: 85%;
     }
@@ -86,6 +86,7 @@ img {
     transition: background-color .3s ease-out;
     text-align: center;
     border: none;
+    width: 100%;
 }
 
 .btn:hover {
@@ -93,13 +94,22 @@ img {
     cursor: pointer;
 }
 
+@media (min-width: 768px) {
+    .btn {
+        width: auto;
+        margin: 0;
+    }
+}
+
 /* Utilidades */
 .text-center {
     text-align: center;
 }
 
-.max-width-30 {
-    max-width: 30rem;
+@media (min-width: 768px) {
+    .max-width-30 {
+        max-width: 30rem;
+    }
 }
 
 /* Header y Navegación */
@@ -124,6 +134,12 @@ img {
         flex-direction: row;
         justify-content: space-evenly;
 
+    }
+}
+
+@media (min-width: 1200px) {
+    .nav-principal {
+        justify-content: space-between;
     }
 }
 
@@ -405,6 +421,7 @@ img {
 .contenido-nosotros {
     display: grid;
     grid-template-columns: 1fr 2fr;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     column-gap: 3rem;
 }
 
@@ -412,13 +429,22 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 5rem;
+}
+
+@media (min-width: 768px) {
+    .informacion-nosotros {
+        padding: 0;
+    }
 }
 
 /* Blog */
-.contenedor-blog {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    column-gap: 3rem;
+@media (min-width: 768px) {
+    .contenedor-blog {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 3rem;
+    }
 }
 
 .entrada {
@@ -427,13 +453,25 @@ img {
     margin-bottom: 5rem;
 }
 
+.entrada h2 {
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .entrada h2 {
+        text-align: left;
+    }
+}
+
 .entrada:last-of-type {
     border: none;
 }
 
-.entrada-meta {
-    display: flex;
-    justify-content: space-between;
+@media (min-width: 768px) {
+    .entrada-meta {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 .entrada-meta p {
@@ -444,10 +482,16 @@ img {
     color: #037bc0;
 }
 
+.texto-blog {
+    padding: 2rem;
+}
+
 /* Entrada Blog */
-.contenido-entrada-blog {
-    width: 60rem;
-    margin: 0 auto;
+@media (min-width: 768px) {
+    .contenido-entrada-blog {
+        width: 80%;
+        margin: 0 auto;
+    }
 }
 
 /* Galería */
@@ -456,8 +500,14 @@ img {
     padding: 0;
     margin: 0;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
     gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .galeria {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 .galeria img {
@@ -468,8 +518,15 @@ img {
 
 /* Formulario */
 .formulario {
-    max-width: 60rem;
-    margin: 0 auto;
+    max-width: 100%;
+    padding-inline: 2rem;
+}
+
+@media (min-width: 768px) {
+    .formulario {
+        max-width: 80%;
+        margin: 0 auto;
+    }
 }
 
 .formulario fieldset {
