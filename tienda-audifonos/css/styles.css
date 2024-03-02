@@ -265,7 +265,7 @@ header {
     .model {
         margin-bottom: 0;
         transition: transform background-size;
-        transition-duration: .2s;
+        transition-duration: .3s;
     }
     .model:hover {
        transform: scale(1.1);
