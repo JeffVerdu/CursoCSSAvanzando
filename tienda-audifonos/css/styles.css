@@ -373,7 +373,7 @@ header {
 
 .newsletter-content {
     display: grid;
-    grid-template-rows: repeat(2, 30rem);
+    grid-template-rows: repeat(2, 1fr);
     gap: var(--separation);
 }
 @media (min-width: 768px) {
@@ -416,5 +416,4 @@ header {
     font-size: 2rem;
     font-weight: 900;
     color: var(--primary);
-    padding-bottom: 2rem;
 }
