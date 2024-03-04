@@ -1,0 +1,62 @@
+:root {
+    --white: #ffffff;
+    --black: #111111;
+    --gray: #343a40;
+
+    --principalFont: 'Raleway', sans-serif;
+}
+
+/* Globales */
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--principalFont);
+    font-size: 1.6rem;
+    line-height: 1.8;
+}
+
+h1, h2, h3 {
+    font-weight: 900;
+    margin: 1rem 0 4rem 0;
+}
+
+h1 {
+    font-size: 4.8rem;
+}
+h2 {
+    font-size: 5.8rem;
+}
+h3 {
+    font-size: 5rem;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.btn {
+    color: var(--gray);
+    background-color: var(--white);
+    border: 1px solid var(--gray);
+    padding: .5rem, 2rem;
+    transition: background-color .3s;
+}
+.btn:hover {
+    background-color: var(--gray);
+    color: var(--white);
+}
