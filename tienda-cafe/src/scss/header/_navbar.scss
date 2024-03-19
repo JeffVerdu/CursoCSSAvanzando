@@ -1,0 +1,34 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+
+    @include m.tablet {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 0;
+        margin-bottom: 0;
+        }
+
+    .navbar__link {
+        text-align: center;
+        color: v.$white;
+        font-weight: 700;
+        font-size: 2rem;
+        text-transform: uppercase;
+
+        &:hover {
+            color: v.$secundary;
+        }
+    }
+
+    .navbar__link--active {
+        color: v.$secundary;
+    }
+}
