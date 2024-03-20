@@ -1,0 +1,46 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.footer__content {
+  background-color: v.$white;
+  align-items: baseline;
+  padding: 2rem;
+
+  @include m.tablet {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 5rem;
+  }
+}
+
+.footer__box {
+  text-align: center;
+  font-family: v.$cursiveFont;
+  margin-bottom: v.$separation;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  @include m.tablet {
+    margin: 0;
+  }
+}
+.footer__tittle {
+  font-family: v.$cursiveFont;
+  font-size: 2.4rem;
+  color: v.$secundary;
+  margin-bottom: 1rem;
+}
+.footer__text {
+  font-size: 2rem;
+  color: v.$black;
+  margin: 0;
+}
+.footer__copy {
+  text-align: center;
+  color: v.$white;
+  margin: 0;
+  padding: 2rem 0;
+}

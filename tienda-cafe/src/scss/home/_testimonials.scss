@@ -1,0 +1,32 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.testimonials {
+  position: relative;
+  background-color: v.$white;
+  padding: 5rem 2rem;
+  margin-top: -10rem;
+
+  @include m.tablet {
+    padding: 10rem;
+  }
+}
+
+.testimonials__item {
+  background-color: v.$lightCoffee;
+  padding: 4rem 3rem;
+  margin: 0 auto;
+  border-radius: 1rem;
+
+  @include m.desktop {
+    width: 50%;
+    padding: 5rem;
+  }
+}
+
+.testimonials__author {
+  font-size: 2.4rem;
+  text-align: right;
+  font-family: v.$cursiveFont;
+  margin: 0;
+}

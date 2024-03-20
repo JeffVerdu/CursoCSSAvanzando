@@ -1,107 +1,349 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="./build/css/app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bona+Nova&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./build/css/app.css" />
 
     <title>Cafeteria - Inicio</title>
-</head>
-<body>
-    <header class="header header--inicio">
-        <div class="header__content container">
-            <div class="header__bar">
-                <div class="header__logo">
-                    <img src="./build/img/logo.svg" alt="Logo Header">
-                </div>
-                
-                <nav class="navbar">
-                    <a class="navbar__link navbar__link--active" href="index.html">Inicio</a>
-                    <a class="navbar__link" href="about.html">Nosotros</a>
-                    <a class="navbar__link" href="process.html">Proceso</a>
-                    <a class="navbar__link" href="menu.html">Menú</a>
-                    <a class="navbar__link" href="gallery.html">Galería</a>
-                    <a class="navbar__link" href="contact.html">Contacto</a>
-                </nav>
-            </div>
+  </head>
 
-            <div class="header__title">
-                <h1 class="header__text">Disfruta de una deliciosa taza de café</h1>
-            </div>
+  <body>
+    <!-- header -->
+    <header class="header header--inicio">
+      <div class="header__content container">
+        <div class="header__bar">
+          <div class="header__logo">
+            <img src="./build/img/logo.svg" alt="Logo Header" />
+          </div>
+
+          <nav class="navbar">
+            <a class="navbar__link navbar__link--active" href="index.html"
+              >Inicio</a
+            >
+            <a class="navbar__link" href="about.html">Nosotros</a>
+            <a class="navbar__link" href="process.html">Proceso</a>
+            <a class="navbar__link" href="menu.html">Menú</a>
+            <a class="navbar__link" href="gallery.html">Galería</a>
+            <a class="navbar__link" href="contact.html">Contacto</a>
+          </nav>
         </div>
+
+        <div class="header__title">
+          <h1 class="header__text">Disfruta de una deliciosa taza de café</h1>
+        </div>
+      </div>
     </header>
 
+    <!-- main -->
     <main class="main">
-        <div class="main__content container text-center">
-            <section class="main__about">
-                <h2 class="main__tittle"><span class="main__span">conoce más</span>sobre nosotros</h2>
+      <div class="main__content container text-center">
+        <section class="main__about">
+          <h2 class="tittle">
+            <span class="tittle__span">conoce más</span>sobre nosotros
+          </h2>
 
-                <p class="main__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus facilis possimus blanditiis veniam voluptatum exercitationem. Adipisci odio porro aliquid nesciunt enim rerum perspiciatis consequatur modi, iure vel a quod! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio corrupti quidem cum dolores laborum tempore animi vel doloremque exercitationem ex, facere vero sunt, illo asperiores porro, architecto doloribus. Provident, laudantium?</p>
-            </section>
+          <p class="main__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+            natus facilis possimus blanditiis veniam voluptatum exercitationem.
+            Adipisci odio porro aliquid nesciunt enim rerum perspiciatis
+            consequatur modi, iure vel a quod! Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Odio corrupti quidem cum dolores
+            laborum tempore animi vel doloremque exercitationem ex, facere vero
+            sunt, illo asperiores porro, architecto doloribus. Provident,
+            laudantium?
+          </p>
+        </section>
 
-            <section class="main__icons">
-                <ul class="iconsList">
-                    <li>
-                        <img class="iconsList__icon" src="build/img/icono_cafe.svg" alt="icono café">
-                        <p class="iconsList__text">Café</p>
-                    </li>
-                    <li>
-                        <img class="iconsList__icon" src="build/img/icono_postre.svg" alt="icono postre">
-                        <p class="iconsList__text">Postres</p>
-                    </li>
-                    <li>
-                        <img class="iconsList__icon" src="build/img/icono_te.svg" alt="icono te">
-                        <p class="iconsList__text">Té</p>
-                    </li>
-                </ul>
-            </section>
+        <section class="main__icons">
+          <ul class="iconsList">
+            <li>
+              <img
+                class="iconsList__icon"
+                src="build/img/icono_cafe.svg"
+                alt="icono café"
+              />
+              <p class="iconsList__text">Café</p>
+            </li>
+            <li>
+              <img
+                class="iconsList__icon"
+                src="build/img/icono_postre.svg"
+                alt="icono postre"
+              />
+              <p class="iconsList__text">Postres</p>
+            </li>
+            <li>
+              <img
+                class="iconsList__icon"
+                src="build/img/icono_te.svg"
+                alt="icono te"
+              />
+              <p class="iconsList__text">Té</p>
+            </li>
+          </ul>
+        </section>
 
-            <section class="main__experience">
-                <h2 class="main__tittle"><span class="main__span">vive la</span>experiencia</h2>
+        <section class="main__experience">
+          <h2 class="tittle">
+            <span class="tittle__span">vive la</span>experiencia
+          </h2>
 
-                <div class="gallery">
-                    <div class="gallery__image">
-                        <img src="build/img/galeria/galeria_01.jpg" alt="imagen galeria">
-                    </div>
-                    <div class="gallery__image">
-                        <img src="build/img/galeria/galeria_02.jpg" alt="imagen galeria">
-                    </div>
-                    <div class="gallery__image">
-                        <img src="build/img/galeria/galeria_03.jpg" alt="imagen galeria">
-                    </div>
-                    <div class="gallery__image">
-                        <img src="build/img/galeria/galeria_04.jpg" alt="imagen galeria">
-                    </div>
-                    <div class="gallery__image">
-                        <img src="build/img/galeria/galeria_05.jpg" alt="imagen galeria">
-                    </div>
-                    <div class="gallery__image">
-                        <img src="build/img/galeria/galeria_06.jpg" alt="imagen galeria">
-                    </div>
-                    <div class="gallery__image">
-                        <img src="build/img/galeria/galeria_07.jpg" alt="imagen galeria">
-                    </div>
-                    <div class="gallery__image">
-                        <img src="build/img/galeria/galeria_08.jpg" alt="imagen galeria">
-                    </div>
-                    <div class="gallery__image">
-                        <img src="build/img/galeria/galeria_09.jpg" alt="imagen galeria">
-                    </div>
-                    <div class="gallery__image">
-                        <img src="build/img/galeria/galeria_10.jpg" alt="imagen galeria">
-                    </div>
-                </div>
-            </section>
-        </div>
+          <div class="gallery">
+            <div class="gallery__image">
+              <img
+                src="build/img/galeria/galeria_01.jpg"
+                alt="imagen galeria"
+              />
+            </div>
+            <div class="gallery__image">
+              <img
+                src="build/img/galeria/galeria_02.jpg"
+                alt="imagen galeria"
+              />
+            </div>
+            <div class="gallery__image">
+              <img
+                src="build/img/galeria/galeria_03.jpg"
+                alt="imagen galeria"
+              />
+            </div>
+            <div class="gallery__image">
+              <img
+                src="build/img/galeria/galeria_04.jpg"
+                alt="imagen galeria"
+              />
+            </div>
+            <div class="gallery__image">
+              <img
+                src="build/img/galeria/galeria_05.jpg"
+                alt="imagen galeria"
+              />
+            </div>
+            <div class="gallery__image">
+              <img
+                src="build/img/galeria/galeria_06.jpg"
+                alt="imagen galeria"
+              />
+            </div>
+            <div class="gallery__image">
+              <img
+                src="build/img/galeria/galeria_07.jpg"
+                alt="imagen galeria"
+              />
+            </div>
+            <div class="gallery__image">
+              <img
+                src="build/img/galeria/galeria_08.jpg"
+                alt="imagen galeria"
+              />
+            </div>
+            <div class="gallery__image">
+              <img
+                src="build/img/galeria/galeria_09.jpg"
+                alt="imagen galeria"
+              />
+            </div>
+            <div class="gallery__image">
+              <img
+                src="build/img/galeria/galeria_10.jpg"
+                alt="imagen galeria"
+              />
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
-</body>
+
+    <!-- menu -->
+    <section class="menu bg-primary">
+      <h2 class="tittle--white">
+        <span class="tittle__span--white">Nuestro delicioso</span>Menú
+      </h2>
+
+      <div class="menu__grid container">
+        <section class="menu__list menu__list--coffee">
+          <h3 class="menu__tittle">Café</h3>
+
+          <ul>
+            <li class="menu__item">
+              <p class="menu__name">
+                Café Latte
+                <span class="menu__description"
+                  >Café Espresso con leche caliente evaporada</span
+                >
+              </p>
+              <p class="menu__price">$25</p>
+            </li>
+            <li class="menu__item">
+              <p class="menu__name">
+                Café Mocha
+                <span class="menu__description">Espresso con crema batida</span>
+              </p>
+              <p class="menu__price">$30</p>
+            </li>
+            <li class="menu__item">
+              <p class="menu__name">
+                Café Americano <span class="menu__description">Café Negro</span>
+              </p>
+              <p class="menu__price">$30</p>
+            </li>
+            <li class="menu__item">
+              <p class="menu__name">
+                Capuccino<span class="menu__description"
+                  >Espresso con una capa suave de espuma</span
+                >
+              </p>
+              <p class="menu__price">$25</p>
+            </li>
+            <li class="menu__item">
+              <p class="menu__name">
+                Café Mocha Frio<span class="menu__description"
+                  >Espresso, dulce con mocha y leche.</span
+                >
+              </p>
+              <p class="menu__price">$29</p>
+            </li>
+            <li class="menu__item">
+              <p class="menu__name">
+                Mocha Frio Quemado<span class="menu__description"
+                  >Espresso, hielo, con azucar quemada y mantequilla.</span
+                >
+              </p>
+              <p class="menu__price">$35</p>
+            </li>
+            <li class="menu__item">
+              <p class="menu__name">
+                Latte con Caramelo<span class="menu__description"
+                  >Espresso, leche y caramelo.</span
+                >
+              </p>
+              <p class="menu__price">$39</p>
+            </li>
+          </ul>
+        </section>
+
+        <section class="menu__list menu__list--food">
+          <h3 class="menu__tittle">Comida</h3>
+
+          <ul>
+            <li class="menu__item">
+              <p class="menu__name">
+                Baguette de Pollo
+                <span class="menu__description"
+                  >Delicioso Baguette con pollo a la plancha</span
+                >
+              </p>
+              <p class="menu__price">$45</p>
+            </li>
+            <li class="menu__item">
+              <p class="menu__name">
+                Baguette Pollo y Queso
+                <span class="menu__description"
+                  >Baguette combinado con Pollo y Queso Manchego</span
+                >
+              </p>
+              <p class="menu__price">$50</p>
+            </li>
+            <li class="menu__item">
+              <p class="menu__name">
+                Baguette con Tocino<span class="menu__description"
+                  >Baguette con especias, verduras y tocino</span
+                >
+              </p>
+              <p class="menu__price">$50</p>
+            </li>
+            <li class="menu__item">
+              <p class="menu__name">
+                Baguette de Jamón<span class="menu__description"
+                  >Delicioso Baguette con Jamón y Especias</span
+                >
+              </p>
+              <p class="menu__price">$65</p>
+            </li>
+            <li class="menu__item">
+              <p class="menu__name">
+                Baguette con Jamón, Queso y Tocino<span
+                  class="menu__description"
+                  >El especial de la casa</span
+                >
+              </p>
+              <p class="menu__price">$69</p>
+            </li>
+            <li class="menu__item">
+              <p class="menu__name">
+                Sandwich de Pollo<span class="menu__description"
+                  >Delicioso sandwich con Pollo y especies</span
+                >
+              </p>
+              <p class="menu__price">$65</p>
+            </li>
+            <li class="menu__item">
+              <p class="menu__name">
+                Sandwich de Jamón y queso<span class="menu__description"
+                  >Queso Amarillo con Jamón y Queso</span
+                >
+              </p>
+              <p class="menu__price">$59</p>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </section>
+
+    <section class="testimonials container">
+      <h2 class="tittle">
+        <span class="tittle__span">lo que dicen nuestros</span>clientes
+      </h2>
+
+      <div class="testimonials__item">
+        <p class="testimonials__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, sit.
+          Omnis enim minus earum quo, assumenda veniam, sunt, labore iure quidem
+          sed rem culpa alias maxime similique quas ea maiores.
+        </p>
+        <p class="testimonials__author">- Jeffrey Verdú</p>
+      </div>
+    </section>
+
+    <footer class="footer bg-primary">
+      <div class="footer__content container">
+        <div class="footer__box footer__box--ubication">
+          <h3 class="footer__tittle">Ubicación</h3>
+          <p class="footer__text">Calle Equis #</p>
+          <p class="footer__text">Ciudad - Provincia</p>
+        </div>
+
+        <div class="footer__box footer__box--reservation">
+          <h3 class="footer__tittle">Reservación</h3>
+          <p class="footer__text">Telefono: +54 5555-55-5555</p>
+          <a class="footer__text" href="tel:+545555555555">Llamar</a>
+        </div>
+
+        <div class="footer__box footer__box--schedule">
+          <h3 class="footer__tittle">Horario</h3>
+          <p class="footer__text">Lun-Jue: 11:00 hrs - 22:00 hrs</p>
+          <p class="footer__text">Vie-Sab: 09:00 hrs - 00:00 hrs</p>
+          <p class="footer__text">Dom: Cerrado</p>
+        </div>
+      </div>
+
+      <p class="footer__copy">Todos los derechos reservados &copy;</p>
+    </footer>
+  </body>
 </html>

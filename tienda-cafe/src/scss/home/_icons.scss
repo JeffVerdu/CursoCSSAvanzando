@@ -1,22 +1,22 @@
-@use 'base/variables' as v;
-@use 'base/mixins' as m;
+@use "base/variables" as v;
+@use "base/mixins" as m;
 
 .main__icons {
-    margin-top: v.$separation;
+  margin-top: v.$separation;
 }
 
 .iconsList {
-    @include m.tablet {
-        display: flex;
-        justify-content: space-around;
-    }
+  @include m.tablet {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 .iconsList__icon {
-    width: 12rem;
-    margin: 0 auto;
+  width: 12rem;
+  margin: 0 auto;
 }
 .iconsList__text {
-    font-family: v.$cursiveFont;
-    font-size: 3.2rem;
-    color: v.$primary;
+  font-family: v.$cursiveFont;
+  font-size: 3.2rem;
+  color: v.$primary;
 }
