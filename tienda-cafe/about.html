@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bona+Nova&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./build/css/app.css" />
+
+    <title>Cafeteria -</title>
+  </head>
+
+  <body>
+    <!-- header -->
+    <header class="header header--about">
+      <div class="header__content container">
+        <div class="header__bar">
+          <div class="header__logo">
+            <img src="./build/img/logo.svg" alt="Logo Header" />
+          </div>
+
+          <nav class="navbar">
+            <a class="navbar__link" href="index.html">Inicio</a>
+            <a class="navbar__link navbar__link--active" href="about.html"
+              >Nosotros</a
+            >
+            <a class="navbar__link" href="process.html">Proceso</a>
+            <a class="navbar__link" href="menu.html">Menú</a>
+            <a class="navbar__link" href="gallery.html">Galería</a>
+            <a class="navbar__link" href="contact.html">Contacto</a>
+          </nav>
+        </div>
+
+        <div class="header__title">
+          <h1 class="header__text">Una nueva experiencia cada día</h1>
+        </div>
+      </div>
+    </header>
+
+    <!-- main -->
+    <main class="main">
+      <div class="main__content--about container">
+        <h2 class="tittle">
+          <span class="tittle__span">Conoce más</span>sobre nosotros
+        </h2>
+
+        <div class="main__about--page">
+          <div class="main__aboutImage">
+            <picture>
+              <source
+                sizes=""
+                srcset="build/img/nosotros_sidebar.avif"
+                type="image/avif"
+              />
+              <source
+                sizes=""
+                srcset="build/img/nosotros_sidebar.webp"
+                type="image/webp"
+              />
+              <source
+                sizes=""
+                srcset="build/img/nosotros_sidebar.jpg"
+                type="image/jpg"
+              />
+              <img
+                loading="lazy"
+                decoding="async"
+                src="build/img/nosotros_sidebar.jpg"
+                lazyalt="imagen"
+                width="500"
+                height="300"
+              />
+            </picture>
+          </div>
+
+          <div class="main__aboutText">
+            <p class="main__text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam
+              voluptas facilis aperiam! Delectus dolores laudantium accusantium,
+              nesciunt pariatur libero, in magnam assumenda quia ea, quod
+              impedit. Molestiae consequatur est mollitia.
+            </p>
+
+            <blockquote class="main__quote">Excelente sabor!</blockquote>
+
+            <p class="main__text">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Laboriosam voluptates ullam voluptatibus illum minima! A, incidunt
+              dolorem cupiditate vitae omnis modi facilis soluta corporis ab
+              iusto, ipsam est officia sed.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer bg-primary">
+      <div class="footer__content container">
+        <div class="footer__box footer__box--ubication">
+          <h3 class="footer__tittle">Ubicación</h3>
+          <p class="footer__text">Calle Equis #</p>
+          <p class="footer__text">Ciudad - Provincia</p>
+        </div>
+
+        <div class="footer__box footer__box--reservation">
+          <h3 class="footer__tittle">Reservación</h3>
+          <p class="footer__text">Telefono: +54 5555-55-5555</p>
+          <a class="footer__text" href="tel:+545555555555">Llamar</a>
+        </div>
+
+        <div class="footer__box footer__box--schedule">
+          <h3 class="footer__tittle">Horario</h3>
+          <p class="footer__text">Lun-Jue: 11:00 hrs - 22:00 hrs</p>
+          <p class="footer__text">Vie-Sab: 09:00 hrs - 00:00 hrs</p>
+          <p class="footer__text">Dom: Cerrado</p>
+        </div>
+      </div>
+
+      <p class="footer__copy">Todos los derechos reservados &copy;</p>
+    </footer>
+  </body>
+</html>

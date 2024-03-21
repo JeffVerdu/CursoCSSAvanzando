@@ -1,0 +1,45 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+@use "home/content";
+
+.main__content--about {
+  @extend .main__content;
+
+  @include m.tablet {
+    padding: 5rem;
+  }
+
+  @include m.desktop {
+    padding: 10rem;
+  }
+}
+
+.main__about--page {
+  @include m.tablet {
+    @include m.grid(2, 5rem);
+    align-items: center;
+  }
+}
+
+.main__aboutImage {
+  margin: 0 auto 5rem auto;
+
+  @include m.tablet {
+    margin: 0 auto;
+  }
+
+  img {
+    transform: rotate(-6deg);
+    border: 3rem solid v.$white;
+    box-shadow: 9px 10px 5px -7px rgb(0 0 0 / 0.35);
+  }
+}
+
+.main__quote {
+  margin: 0;
+  padding: 1rem;
+  font-size: 2rem;
+  font-family: v.$cursiveFont;
+  font-weight: 700;
+  border-left: 0.5rem solid v.$primary;
+}
