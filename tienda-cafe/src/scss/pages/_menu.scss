@@ -1,0 +1,45 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+@use "home/content";
+
+.main__content--menu {
+  padding: 10rem 5rem 0 5rem;
+
+  @include m.tablet {
+    padding: 10rem 2rem 0 2rem;
+  }
+
+  @include m.desktop {
+    padding: 10rem 10rem 0 10rem;
+  }
+}
+
+.main__menu {
+  background-image: url("../img/cafe.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 100%;
+  aspect-ratio: 3/11;
+
+  @include m.mobile {
+    aspect-ratio: 3/8.5;
+  }
+
+  @include m.mobile-xl {
+    aspect-ratio: 3/8;
+  }
+
+  @include m.tablet {
+    @include m.grid(2, 1rem);
+    background-size: 50%;
+    background-position: bottom right;
+    aspect-ratio: 16/6;
+  }
+
+  @include m.desktop {
+    background-size: 50%;
+  }
+}
+.main__text--menu {
+  font-size: 2rem;
+}

@@ -5,6 +5,11 @@
     @content;
   }
 }
+@mixin mobile-xl {
+  @media (min-width: v.$mobile-xl) {
+    @content;
+  }
+}
 @mixin tablet {
   @media (min-width: v.$tablet) {
     @content;

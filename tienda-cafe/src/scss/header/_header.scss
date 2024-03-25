@@ -31,6 +31,18 @@
   @extend .header--index;
   background-image: url("../img/header_nosotros.jpg");
 }
+.header--process {
+  @extend .header--index;
+  background-image: url("../img/header_proceso.jpg");
+}
+.header--menu {
+  @extend .header--index;
+  background-image: url("../img/header_menu.jpg");
+}
+.header--gallery {
+  @extend .header--index;
+  background-image: url("../img/header_galeria.jpg");
+}
 
 .header__content {
   position: relative;
