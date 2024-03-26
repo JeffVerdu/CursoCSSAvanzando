@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bona+Nova&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./build/css/app.css" />
+
+    <title>Cafeteria - Contacto</title>
+  </head>
+
+  <body>
+    <!-- header -->
+    <header class="header header--contact">
+      <div class="header__content container">
+        <div class="header__bar">
+          <div class="header__logo">
+            <img src="./build/img/logo.svg" alt="Logo Header" />
+          </div>
+
+          <nav class="navbar">
+            <a class="navbar__link" href="index.html">Inicio</a>
+            <a class="navbar__link" href="about.html">Nosotros</a>
+            <a class="navbar__link" href="process.html">Proceso</a>
+            <a class="navbar__link" href="menu.html">Menú</a>
+            <a class="navbar__link" href="gallery.html">Galería</a>
+            <a class="navbar__link navbar__link--active" href="contact.html"
+              >Contacto</a
+            >
+          </nav>
+        </div>
+
+        <div class="header__title">
+          <h1 class="header__text">Mejores granos, mejor café</h1>
+        </div>
+      </div>
+    </header>
+
+    <!-- main -->
+    <main class="main">
+      <div class="main__content container">
+        <h2 class="tittle"><span class="tittle__span">Reserva tu</span>Mesa</h2>
+
+        <div class="contact">
+          <form action="" class="contact__form">
+            <div class="input">
+              <label for="name">Nombre:</label>
+              <input type="text" id="name" placeholder="Tu nombre" />
+            </div>
+            <div class="input">
+              <label for="email">Email:</label>
+              <input type="email" id="email" placeholder="Tu Email" />
+            </div>
+            <div class="input">
+              <label for="guests">Email:</label>
+              <select name="guests" id="guests">
+                <option value="" disabled selected>-- Seleccione --</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="mas">4+</option>
+              </select>
+            </div>
+              <div class="input">
+                <label for="hour">Hora:</label>
+                <input type="time" id="hour"/>
+              </div>
+              <div class="input">
+                <label for="date">Fecha:</label>
+                <input type="date" id="date"/>
+              </div>
+              <div class="input">
+                <input type="submit" value="Enviar">
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer bg-primary">
+      <div class="footer__content container">
+        <div class="footer__box footer__box--ubication">
+          <h3 class="footer__tittle">Ubicación</h3>
+          <p class="footer__text">Calle Equis #</p>
+          <p class="footer__text">Ciudad - Provincia</p>
+        </div>
+
+        <div class="footer__box footer__box--reservation">
+          <h3 class="footer__tittle">Reservación</h3>
+          <p class="footer__text">Telefono: +54 5555-55-5555</p>
+          <a class="footer__text" href="tel:+545555555555">Llamar</a>
+        </div>
+
+        <div class="footer__box footer__box--schedule">
+          <h3 class="footer__tittle">Horario</h3>
+          <p class="footer__text">Lun-Jue: 11:00 hrs - 22:00 hrs</p>
+          <p class="footer__text">Vie-Sab: 09:00 hrs - 00:00 hrs</p>
+          <p class="footer__text">Dom: Cerrado</p>
+        </div>
+      </div>
+
+      <p class="footer__copy">Todos los derechos reservados &copy;</p>
+    </footer>
+  </body>
+</html>

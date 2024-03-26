@@ -31,6 +31,17 @@
 
 .menu__tittle {
   color: v.$white;
+  margin-bottom: 3rem;
+
+  &:last-of-type {
+    margin-top: 5rem;
+  }
+
+  @include m.tablet {
+    &:last-of-type {
+      margin-top: 0rem;
+    }
+  }
 }
 .menu__item {
   display: flex;

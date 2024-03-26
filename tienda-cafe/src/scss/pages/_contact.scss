@@ -1,0 +1,48 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.contact {
+  @include m.tablet {
+    @include m.grid(2, v.$separation);
+    background-image: url("../img/granos_cafe.jpg");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 40%;
+  }
+}
+
+.input {
+  margin-bottom: 2rem;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  label {
+    font-size: 2.2rem;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  input:not([type="submit"]),
+  select {
+    width: 100%;
+    padding: 1rem;
+    border: 0.1rem solid v.$primary;
+  }
+
+  input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    font-size: 2.2rem;
+    border: none;
+    text-transform: uppercase;
+    background-color: v.$primary;
+    color: v.$white;
+  }
+  input[type="submit"]:hover {
+    cursor: pointer;
+  }
+}

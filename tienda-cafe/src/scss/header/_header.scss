@@ -43,6 +43,10 @@
   @extend .header--index;
   background-image: url("../img/header_galeria.jpg");
 }
+.header--contact {
+  @extend .header--index;
+  background-image: url("../img/header_contacto.jpg");
+}
 
 .header__content {
   position: relative;

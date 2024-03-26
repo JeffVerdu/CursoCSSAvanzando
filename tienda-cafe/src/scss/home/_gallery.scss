@@ -12,8 +12,12 @@
 .gallery__image {
   img {
     width: 100%;
-    height: 100%;
+    height: 17.35rem;
     object-fit: cover;
+
+    @include m.desktop {
+      height: 100%;
+    }
   }
   @include m.desktop {
     &:nth-child(1) {
