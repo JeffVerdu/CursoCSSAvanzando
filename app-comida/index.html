@@ -15,6 +15,60 @@
     <link rel="stylesheet" href="build/css/app.css" />
   </head>
   <body>
-    <header></header>
+    <header class="header container">
+      <div class="header__logo">
+        <img src="build/img/logo.svg" alt="Logo App Comida" />
+      </div>
+
+      <div class="navbar">
+        <a href="#" class="navbar__link">Iniciar Sesión</a>
+        <a href="#" class="navbar__link">Crear Cuenta</a>
+        <a href="#" class="navbar__link navbar__link--register"
+          >Registrar Restaurant</a
+        >
+      </div>
+    </header>
+
+    <section class="form container">
+      <div class="form__grid">
+        <div class="form__content">
+          <h2 class="form__heading">
+            Encuentra y pide comida de tu restaurante favorito
+          </h2>
+
+          <form class="form__find">
+            <div class="form__field">
+              <label for="restaurant" class="form__label">Restaurant</label>
+              <input
+                id="restaurant"
+                type="text"
+                class="form__input"
+                placeholder="Rotisería María"
+              />
+            </div>
+
+            <div class="form__field">
+              <label for="food" class="form__label">Comida</label>
+              <input
+                id="food"
+                type="text"
+                class="form__input"
+                placeholder="Pollo Asado"
+              />
+            </div>
+
+            <input type="submit" class="form__submit" value="Buscar" />
+          </form>
+        </div>
+
+        <div class="form__img-container">
+          <img
+            class="form__img"
+            src="build/img/dibujo_repartidor.svg"
+            alt="Imagen repartidor"
+          />
+        </div>
+      </div>
+    </section>
   </body>
 </html>
