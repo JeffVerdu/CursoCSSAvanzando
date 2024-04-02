@@ -19,6 +19,12 @@
   }
 }
 
+@mixin large_desktop {
+  @media (min-width: v.$large_desktop) {
+    @content;
+  }
+}
+
 @mixin button($color, $texto) {
   background-color: $color;
   font-size: 2rem;
@@ -47,4 +53,15 @@
   display: grid;
   gap: $espaciado;
   grid-template-columns: repeat($columnas, 1fr);
+}
+
+@mixin bg-image($url, $color) {
+  background-image: linear-gradient($color 0%, $color 100%), url($url);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+
+  @include large_desktop {
+    background-position: center center;
+  }
 }
