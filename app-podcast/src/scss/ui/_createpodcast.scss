@@ -1,0 +1,8 @@
+@use "base/mixins" as m;
+
+.create-grid {
+  @include m.desktop {
+    @include m.grid(2, 2rem);
+    align-items: center;
+  }
+}

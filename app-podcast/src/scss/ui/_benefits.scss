@@ -1,0 +1,32 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.benefits {
+  background-color: v.$primary;
+
+  .benefits-grid {
+    @include m.desktop {
+      display: grid;
+      grid-template-columns: 3fr 2fr;
+      gap: 5rem;
+      align-items: center;
+    }
+  }
+
+  .benefits-content {
+    h2 {
+      &::after {
+        background-color: v.$white;
+      }
+    }
+  }
+
+  .benefits-image {
+    margin: 0 auto;
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: rotate(3deg) scale(1.1);
+    }
+  }
+}
