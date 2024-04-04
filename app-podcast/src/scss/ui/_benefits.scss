@@ -15,9 +15,7 @@
 
   .benefits-content {
     h2 {
-      &::after {
-        background-color: v.$white;
-      }
+      @include m.section-heading(v.$secundary, v.$white);
     }
   }
 

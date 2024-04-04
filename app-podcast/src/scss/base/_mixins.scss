@@ -65,3 +65,22 @@
     background-position: center center;
   }
 }
+
+@mixin section-heading($color-texto, $color-linea) {
+  display: inline-block;
+  margin-top: 5rem;
+  color: $color-texto;
+
+  @include desktop {
+    margin-top: 0;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 102%;
+    height: 1rem;
+    background-color: $color-linea;
+    margin: -1.4rem 0 0 0;
+  }
+}

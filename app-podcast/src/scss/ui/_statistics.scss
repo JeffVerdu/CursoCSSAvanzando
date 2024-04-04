@@ -1,15 +1,13 @@
 @use "base/variables" as v;
 @use "base/mixins" as m;
 
-.create-grid {
-  @include m.desktop {
-    @include m.grid(2, 2rem);
-    align-items: center;
-  }
-}
-
-.create-content {
+.statistics {
   h2 {
     @include m.section-heading(v.$secundary, v.$primary);
+  }
+
+  img {
+    width: 90%;
+    margin: 0 auto;
   }
 }
