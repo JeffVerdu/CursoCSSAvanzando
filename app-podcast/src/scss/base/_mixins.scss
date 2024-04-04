@@ -42,11 +42,6 @@
     cursor: pointer;
     background-color: darken($color, 10);
   }
-
-  @include tablet {
-    width: auto;
-    display: inline-block;
-  }
 }
 
 @mixin grid($columnas, $espaciado) {
@@ -64,6 +59,13 @@
   @include large_desktop {
     background-position: center center;
   }
+}
+
+@mixin bg-plan($url) {
+  background-image: url($url);
+  background-repeat: no-repeat;
+  background-position: 50% 2rem;
+  background-size: 10rem;
 }
 
 @mixin section-heading($color-texto, $color-linea) {

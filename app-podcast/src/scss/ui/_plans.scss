@@ -1,0 +1,82 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.plans {
+  background-color: v.$secundary;
+
+  h2 {
+    @include m.section-heading(v.$white, v.$primary);
+  }
+
+  .info {
+    color: v.$white;
+  }
+}
+
+.our-plans {
+  display: flex;
+  flex-direction: column;
+  margin-inline: auto;
+  margin-block-start: 10rem;
+
+  @include m.desktop {
+    flex-direction: row;
+  }
+
+  .plan {
+    flex-grow: 1;
+    background-color: v.$white;
+    padding: 16rem 4rem 4rem 4rem;
+    max-width: 80rem;
+    border-bottom: 1px solid #e1e1e1;
+    transition: transform 0.3s;
+
+    @include m.desktop {
+      border-bottom: none;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    .price {
+      font-size: 1.8rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    .list {
+      text-align: center;
+      line-height: 2;
+    }
+
+    &.inicio {
+      @include m.bg-plan("../img/icono_inicio.svg");
+    }
+    &.negocio {
+      background-color: v.$primary;
+      order: -1;
+      @include m.bg-plan("../img/icono_negocio.svg");
+
+      @include m.desktop {
+        order: unset;
+        margin-block: -5rem;
+        padding-top: 21rem;
+        border-radius: 2rem;
+        background-position: 50% 7rem;
+        z-index: 10;
+      }
+      .plan-button {
+        border: 1px solid v.$white;
+      }
+    }
+    &.pro {
+      @include m.bg-plan("../img/icono_pro.svg");
+    }
+  }
+
+  .plan-button {
+    @include m.button(v.$primary, v.$black);
+  }
+}
