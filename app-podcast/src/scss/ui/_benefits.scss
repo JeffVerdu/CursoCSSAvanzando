@@ -15,7 +15,7 @@
 
   .benefits-content {
     h2 {
-      @include m.section-heading(v.$secundary, v.$white);
+      @include m.section-heading(v.$secondary, v.$white);
     }
   }
 

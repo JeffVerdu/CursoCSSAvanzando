@@ -3,7 +3,7 @@
 
 .statistics {
   h2 {
-    @include m.section-heading(v.$secundary, v.$primary);
+    @include m.section-heading(v.$secondary, v.$primary);
   }
 
   img {

@@ -2,7 +2,7 @@
 @use "base/mixins" as m;
 
 .header-site {
-  @include m.bg-image("../img/header.jpg", v.$secundary_opacity);
+  @include m.bg-image("../img/header.jpg", v.$secondary_opacity);
   padding: 5rem 0;
 
   .header-logo {

@@ -2,5 +2,11 @@
 @use "base/mixins" as m;
 
 .btn-primary {
-  @include m.button(v.$primary, v.$secundary);
+  @include m.button(v.$primary, v.$secondary);
+}
+
+.plan-button {
+  @extend .btn-primary;
+  border: 1px solid v.$white;
+  display: block;
 }

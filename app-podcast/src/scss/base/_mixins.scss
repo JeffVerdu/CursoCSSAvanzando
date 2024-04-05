@@ -38,6 +38,11 @@
   transition: background-color 0.3s ease;
   border: none;
 
+  @include tablet {
+    width: auto;
+    display: inline-block;
+  }
+
   &:hover {
     cursor: pointer;
     background-color: darken($color, 10);
@@ -66,6 +71,14 @@
   background-repeat: no-repeat;
   background-position: 50% 2rem;
   background-size: 10rem;
+
+  @include tablet {
+    background-size: 8rem;
+  }
+
+  @include desktop {
+    background-size: 10rem;
+  }
 }
 
 @mixin section-heading($color-texto, $color-linea) {

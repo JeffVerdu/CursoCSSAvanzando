@@ -1,0 +1,74 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.testimonials {
+
+    @include m.tablet {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        gap: 4rem;
+        align-items: center;
+    }
+
+    .image {
+        @include m.tablet {
+            order: -1;
+        }
+    }
+
+    .content {
+
+        @include m.tablet {
+            order: unset;
+        }
+
+        h2 {
+            @include m.section-heading(v.$secondary, v.$primary);
+            margin-bottom: 5rem;
+        }
+
+        .testimonial {
+            background-color: v.$primary;
+            padding: 2rem;
+            border: .5rem solid v.$secondary;
+            border-radius: 1rem;
+            margin-bottom: 3rem;
+            position: relative;
+
+            @include m.desktop {
+                width: 70%;
+
+                &:nth-child(2) {
+                    margin-left: 10%;
+                }
+                &:nth-child(3) {
+                    margin-left: 20%;
+                }
+                &:nth-child(4) {
+                    margin-left: 30%;
+                }
+            }
+
+            &:last-of-type {
+                margin-bottom: 5rem;
+            }
+
+            &::before {
+                content: "";
+                display: block;
+                width: 5rem;
+                height: 5rem;
+                background-image: url('../img/comilla.svg');
+                background-repeat: no-repeat;
+                background-position: center center;
+                position: absolute;
+            }
+
+            p {
+                margin: 0;
+                font-size: 1.6rem;
+                padding-left: 6rem;
+            }
+        }
+    }
+}
