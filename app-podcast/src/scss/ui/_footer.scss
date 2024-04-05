@@ -12,6 +12,7 @@
 
         @include m.tablet {
             @include m.grid(4, 2rem);
+            align-items: center;
         }
     }
 
@@ -58,7 +59,8 @@
 
     .copyright {
         p {
-            font-size: 1.6rem;
+            font-size: 1.2rem;
+            text-transform: uppercase;
             color: v.$white;
             text-align: center;
             margin: 0;
